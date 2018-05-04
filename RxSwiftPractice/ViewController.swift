@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
+
+
 
 class ViewController: UIViewController {
     private let cellId = "HomeCell"

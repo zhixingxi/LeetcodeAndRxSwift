@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import RxSwift
 
 struct DemoModel {
     let title: String

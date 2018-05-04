@@ -16,7 +16,6 @@
 		02FE3911209C3F8B00028F7B /* RxSwiftPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE3910209C3F8B00028F7B /* RxSwiftPracticeUITests.swift */; };
 		02FE3926209C4FE900028F7B /* DemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE3925209C4FE900028F7B /* DemoModel.swift */; };
 		02FE392B209C541A00028F7B /* MusicListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE3928209C541A00028F7B /* MusicListController.swift */; };
-		02FE392C209C541A00028F7B /* MusicListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE3929209C541A00028F7B /* MusicListViewModel.swift */; };
 		02FE392D209C541A00028F7B /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE392A209C541A00028F7B /* MusicModel.swift */; };
 		5B56F2B8BD0CF84F254C6AFB /* Pods_RxSwiftPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93509AD50B24F4ABF8550A97 /* Pods_RxSwiftPractice.framework */; };
 /* End PBXBuildFile section */
@@ -54,8 +53,8 @@
 		02FE3912209C3F8B00028F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02FE3925209C4FE900028F7B /* DemoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModel.swift; sourceTree = "<group>"; };
 		02FE3928209C541A00028F7B /* MusicListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListController.swift; sourceTree = "<group>"; };
-		02FE3929209C541A00028F7B /* MusicListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListViewModel.swift; sourceTree = "<group>"; };
 		02FE392A209C541A00028F7B /* MusicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
+		02FE3931209C5D8300028F7B /* RxSwiftPractice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxSwiftPractice-Bridging-Header.h"; sourceTree = "<group>"; };
 		3582032FA64CBA71666617BE /* Pods-RxSwiftPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftPractice/Pods-RxSwiftPractice.release.xcconfig"; sourceTree = "<group>"; };
 		93509AD50B24F4ABF8550A97 /* Pods_RxSwiftPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B230153C95430899184FC6F2 /* Pods-RxSwiftPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftPractice/Pods-RxSwiftPractice.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +119,7 @@
 				02FE38F7209C3F8B00028F7B /* Assets.xcassets */,
 				02FE38F9209C3F8B00028F7B /* LaunchScreen.storyboard */,
 				02FE38FC209C3F8B00028F7B /* Info.plist */,
+				02FE3931209C5D8300028F7B /* RxSwiftPractice-Bridging-Header.h */,
 			);
 			path = RxSwiftPractice;
 			sourceTree = "<group>";
@@ -146,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				02FE3928209C541A00028F7B /* MusicListController.swift */,
-				02FE3929209C541A00028F7B /* MusicListViewModel.swift */,
 				02FE392A209C541A00028F7B /* MusicModel.swift */,
 			);
 			path = Music;
@@ -239,6 +238,7 @@
 				TargetAttributes = {
 					02FE38EC209C3F8900028F7B = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					02FE3900209C3F8B00028F7B = {
 						CreatedOnToolsVersion = 9.3;
@@ -347,7 +347,6 @@
 				02FE392B209C541A00028F7B /* MusicListController.swift in Sources */,
 				02FE3926209C4FE900028F7B /* DemoModel.swift in Sources */,
 				02FE38F1209C3F8900028F7B /* AppDelegate.swift in Sources */,
-				02FE392C209C541A00028F7B /* MusicListViewModel.swift in Sources */,
 				02FE392D209C541A00028F7B /* MusicModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,8 +521,10 @@
 			baseConfigurationReference = B230153C95430899184FC6F2 /* Pods-RxSwiftPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 883RB2PT5K;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = RxSwiftPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -531,6 +532,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Apple.RxSwiftPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RxSwiftPractice/RxSwiftPractice-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -541,8 +544,10 @@
 			baseConfigurationReference = 3582032FA64CBA71666617BE /* Pods-RxSwiftPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 883RB2PT5K;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = RxSwiftPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -550,6 +555,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Apple.RxSwiftPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RxSwiftPractice/RxSwiftPractice-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
