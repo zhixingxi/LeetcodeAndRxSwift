@@ -17,6 +17,8 @@
 		02FE3926209C4FE900028F7B /* DemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE3925209C4FE900028F7B /* DemoModel.swift */; };
 		02FE392B209C541A00028F7B /* MusicListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE3928209C541A00028F7B /* MusicListController.swift */; };
 		02FE392D209C541A00028F7B /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE392A209C541A00028F7B /* MusicModel.swift */; };
+		02FE393A209C668100028F7B /* IntervalObservableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE3938209C668100028F7B /* IntervalObservableController.swift */; };
+		02FE393B209C668100028F7B /* IntervalObservableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02FE3939209C668100028F7B /* IntervalObservableController.xib */; };
 		5B56F2B8BD0CF84F254C6AFB /* Pods_RxSwiftPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93509AD50B24F4ABF8550A97 /* Pods_RxSwiftPractice.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		02FE3928209C541A00028F7B /* MusicListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListController.swift; sourceTree = "<group>"; };
 		02FE392A209C541A00028F7B /* MusicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
 		02FE3931209C5D8300028F7B /* RxSwiftPractice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxSwiftPractice-Bridging-Header.h"; sourceTree = "<group>"; };
+		02FE3938209C668100028F7B /* IntervalObservableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalObservableController.swift; sourceTree = "<group>"; };
+		02FE3939209C668100028F7B /* IntervalObservableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntervalObservableController.xib; sourceTree = "<group>"; };
 		3582032FA64CBA71666617BE /* Pods-RxSwiftPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftPractice/Pods-RxSwiftPractice.release.xcconfig"; sourceTree = "<group>"; };
 		93509AD50B24F4ABF8550A97 /* Pods_RxSwiftPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B230153C95430899184FC6F2 /* Pods-RxSwiftPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftPractice/Pods-RxSwiftPractice.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 		02FE38EF209C3F8900028F7B /* RxSwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
+				02FE3935209C660F00028F7B /* IntervalObservable */,
 				02FE3927209C541A00028F7B /* Music */,
 				02FE38F0209C3F8900028F7B /* AppDelegate.swift */,
 				02FE38F2209C3F8900028F7B /* ViewController.swift */,
@@ -149,6 +154,15 @@
 				02FE392A209C541A00028F7B /* MusicModel.swift */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		02FE3935209C660F00028F7B /* IntervalObservable */ = {
+			isa = PBXGroup;
+			children = (
+				02FE3938209C668100028F7B /* IntervalObservableController.swift */,
+				02FE3939209C668100028F7B /* IntervalObservableController.xib */,
+			);
+			path = IntervalObservable;
 			sourceTree = "<group>";
 		};
 		C78EE92B3D1F7F8D76ABC10A /* Pods */ = {
@@ -277,6 +291,7 @@
 			files = (
 				02FE38FB209C3F8B00028F7B /* LaunchScreen.storyboard in Resources */,
 				02FE38F8209C3F8B00028F7B /* Assets.xcassets in Resources */,
+				02FE393B209C668100028F7B /* IntervalObservableController.xib in Resources */,
 				02FE38F6209C3F8900028F7B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +361,7 @@
 				02FE38F3209C3F8900028F7B /* ViewController.swift in Sources */,
 				02FE392B209C541A00028F7B /* MusicListController.swift in Sources */,
 				02FE3926209C4FE900028F7B /* DemoModel.swift in Sources */,
+				02FE393A209C668100028F7B /* IntervalObservableController.swift in Sources */,
 				02FE38F1209C3F8900028F7B /* AppDelegate.swift in Sources */,
 				02FE392D209C541A00028F7B /* MusicModel.swift in Sources */,
 			);

@@ -25,6 +25,7 @@ extension DemoModel: CustomStringConvertible {
 
 struct DemoViewModel {
     let demoData = Observable.just([
-        DemoModel(title: "音乐列表", desController: NSStringFromClass(MusicListController.self))
+        DemoModel(title: "音乐列表", desController: NSStringFromClass(MusicListController.self)),
+        DemoModel(title: "interval()创建Observable方法", desController: NSStringFromClass(IntervalObservableController.self))
         ])
 }

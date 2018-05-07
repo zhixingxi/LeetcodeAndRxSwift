@@ -31,12 +31,11 @@ class ViewController: UIViewController {
                 cell.textLabel?.text = model.title
         }.disposed(by: disposeBag)
         
-        tableView.rx.modelSelected(DemoModel.self).subscribe { (demoModel) in
-            guard let model = demoModel.element,
-                let cls = NSClassFromString(model.desController) as? UIViewController.Type else {return}
+        tableView.rx.modelSelected(DemoModel.self).subscribe(onNext: { (demoModel) in
+            guard let cls = NSClassFromString(demoModel.desController) as? UIViewController.Type else {return}
             let vc = cls.init()
             self.navigationController?.pushViewController(vc, animated: true)
-        }.disposed(by: disposeBag)
+        }).disposed(by: disposeBag)
         
     }
 
