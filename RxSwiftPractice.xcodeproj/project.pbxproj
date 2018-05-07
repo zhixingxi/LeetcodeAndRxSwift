@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		029F1BFD209FF45F00012840 /* SubjectsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029F1BFB209FF45F00012840 /* SubjectsController.swift */; };
+		029F1BFE209FF45F00012840 /* SubjectsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029F1BFC209FF45F00012840 /* SubjectsController.xib */; };
 		02FE38F1209C3F8900028F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE38F0209C3F8900028F7B /* AppDelegate.swift */; };
 		02FE38F3209C3F8900028F7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE38F2209C3F8900028F7B /* ViewController.swift */; };
 		02FE38F6209C3F8900028F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02FE38F4209C3F8900028F7B /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		029F1BFB209FF45F00012840 /* SubjectsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsController.swift; sourceTree = "<group>"; };
+		029F1BFC209FF45F00012840 /* SubjectsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubjectsController.xib; sourceTree = "<group>"; };
 		02FE38ED209C3F8900028F7B /* RxSwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FE38F0209C3F8900028F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02FE38F2209C3F8900028F7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		029F1BFA209FF43D00012840 /* SubjectsAndVariables */ = {
+			isa = PBXGroup;
+			children = (
+				029F1BFB209FF45F00012840 /* SubjectsController.swift */,
+				029F1BFC209FF45F00012840 /* SubjectsController.xib */,
+			);
+			path = SubjectsAndVariables;
+			sourceTree = "<group>";
+		};
 		02FE38E4209C3F8900028F7B = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +128,7 @@
 		02FE38EF209C3F8900028F7B /* RxSwiftPractice */ = {
 			isa = PBXGroup;
 			children = (
+				029F1BFA209FF43D00012840 /* SubjectsAndVariables */,
 				02FE3935209C660F00028F7B /* IntervalObservable */,
 				02FE3927209C541A00028F7B /* Music */,
 				02FE38F0209C3F8900028F7B /* AppDelegate.swift */,
@@ -293,6 +307,7 @@
 				02FE38F8209C3F8B00028F7B /* Assets.xcassets in Resources */,
 				02FE393B209C668100028F7B /* IntervalObservableController.xib in Resources */,
 				02FE38F6209C3F8900028F7B /* Main.storyboard in Resources */,
+				029F1BFE209FF45F00012840 /* SubjectsController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +376,7 @@
 				02FE38F3209C3F8900028F7B /* ViewController.swift in Sources */,
 				02FE392B209C541A00028F7B /* MusicListController.swift in Sources */,
 				02FE3926209C4FE900028F7B /* DemoModel.swift in Sources */,
+				029F1BFD209FF45F00012840 /* SubjectsController.swift in Sources */,
 				02FE393A209C668100028F7B /* IntervalObservableController.swift in Sources */,
 				02FE38F1209C3F8900028F7B /* AppDelegate.swift in Sources */,
 				02FE392D209C541A00028F7B /* MusicModel.swift in Sources */,
