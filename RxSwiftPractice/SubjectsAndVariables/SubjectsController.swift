@@ -20,6 +20,7 @@ class SubjectsController: UIViewController {
         testVariable()
     }
     
+    
     deinit {
         print("sfsdfafaf")
     }
@@ -28,18 +29,18 @@ class SubjectsController: UIViewController {
 // MARK: - Variable
 extension SubjectsController {
     private func testVariable() {
+        let disposeBag1 = DisposeBag()
         let variable = BehaviorRelay(value: "1111")
         variable.accept("222")
         
         variable.asObservable().subscribe { (event) in
             print("第1次订阅：", event)
-        }.disposed(by: disposeBag)
+        }.disposed(by: disposeBag1)
         
         variable.accept("333")
         variable.asObservable().subscribe { (event) in
             print("第2次订阅：", event)
-        }.disposed(by: disposeBag)
-        
+        }.disposed(by: disposeBag1)
         variable.accept("444")
     }
 }
